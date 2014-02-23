@@ -49,4 +49,17 @@ void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_4_element(
 	TEST_ASSERT_EQUAL(2,array[2]);
 	TEST_ASSERT_EQUAL(1,array[3]);
 }
+void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range100Toneg100(){
+	int array [] ={100,75,50,25,0,-25,-50,-75,-100};
+	sortSmallestToRightMost(array, sizeof(array)/sizeof(int));
+	TEST_ASSERT_EQUAL(100,array[0]);
+	TEST_ASSERT_EQUAL(75,array[1]);
+	TEST_ASSERT_EQUAL(50,array[2]);
+	TEST_ASSERT_EQUAL(25,array[3]);
+	TEST_ASSERT_EQUAL(0,array[4]);
+	TEST_ASSERT_EQUAL(-25,array[5]);
+	TEST_ASSERT_EQUAL(-50,array[6]);
+	TEST_ASSERT_EQUAL(-75,array[7]);
+	TEST_ASSERT_EQUAL(-100,array[8]);
 
+}
