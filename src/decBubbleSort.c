@@ -10,3 +10,12 @@ void compareAndSwapSmallerToRight(int *first, int *second){
 	}
 	
 }
+
+void sortSmallestToRightMost(int *array, int size){
+	
+	int i;
+	for(i=0 ; i<size-1 ; i++){
+		compareAndSwapSmallerToRight(&array[i],&array[i+1]);
+	}
+	
+}

@@ -15,11 +15,23 @@
 - :test: test_compareAndSwapSmallerToRight_should_swap_if_in_order_for_neg_num
   :line: 25
   :message: ''
+- :test: test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_2_element
+  :line: 31
+  :message: ''
+- :test: test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_3_element
+  :line: 37
+  :message: ''
+- :test: test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_4_element
+  :line: 44
+  :message: ''
+- :test: test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range100Toneg100
+  :line: 52
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 4
-  :passed: 4
+  :total: 8
+  :passed: 8
   :failed: 0
   :ignored: 0
 :stdout: []

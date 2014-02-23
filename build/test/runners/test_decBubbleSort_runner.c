@@ -34,6 +34,10 @@ extern void test_compareAndSwapSmallerToRight_should_not_swap_if_in_order(void);
 extern void test_compareAndSwapSmallerToRight_should_swap_if_in_order(void);
 extern void test_compareAndSwapSmallerToRight_should_not_swap_if_in_order_for_neg_num(void);
 extern void test_compareAndSwapSmallerToRight_should_swap_if_in_order_for_neg_num(void);
+extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_2_element(void);
+extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_3_element(void);
+extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_4_element(void);
+extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range100Toneg100(void);
 
 
 //=======Test Reset Option=====
@@ -53,6 +57,10 @@ int main(void)
   RUN_TEST(test_compareAndSwapSmallerToRight_should_swap_if_in_order, 13);
   RUN_TEST(test_compareAndSwapSmallerToRight_should_not_swap_if_in_order_for_neg_num, 19);
   RUN_TEST(test_compareAndSwapSmallerToRight_should_swap_if_in_order_for_neg_num, 25);
+  RUN_TEST(test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_2_element, 31);
+  RUN_TEST(test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_3_element, 37);
+  RUN_TEST(test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_4_element, 44);
+  RUN_TEST(test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range100Toneg100, 52);
 
   return (UnityEnd());
 }

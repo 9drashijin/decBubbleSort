@@ -2,5 +2,6 @@
 #define __DEC_BUBBLE_SORT_H__
 
 void compareAndSwapSmallerToRight(int *first, int *second);
+void sortSmallestToRightMost(int *array, int size);
 	
 #endif // __DEC_BUBBLE_SORT_H__
