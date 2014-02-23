@@ -31,6 +31,7 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_compareAndSwapSmallerToRight_should_not_swap_if_in_order(void);
+extern void test_compareAndSwapSmallerToRight_should_swap_if_in_order(void);
 
 
 //=======Test Reset Option=====
@@ -47,6 +48,7 @@ int main(void)
   Unity.TestFile = "test_decBubbleSort.c";
   UnityBegin();
   RUN_TEST(test_compareAndSwapSmallerToRight_should_not_swap_if_in_order, 7);
+  RUN_TEST(test_compareAndSwapSmallerToRight_should_swap_if_in_order, 13);
 
   return (UnityEnd());
 }

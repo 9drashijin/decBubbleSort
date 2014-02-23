@@ -19,3 +19,15 @@ void test_compareAndSwapSmallerToRight_should_not_swap_if_in_order(){
  UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)11, UNITY_DISPLAY_STYLE_INT);
 
 }
+
+void test_compareAndSwapSmallerToRight_should_swap_if_in_order(){
+
+ int array [] ={2,12};
+
+ compareAndSwapSmallerToRight(&array[0], &array[1]);
+
+ UnityAssertEqualNumber((_U_SINT)((12)), (_U_SINT)((array[0])), (((void *)0)), (_U_UINT)16, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)17, UNITY_DISPLAY_STYLE_INT);
+
+}

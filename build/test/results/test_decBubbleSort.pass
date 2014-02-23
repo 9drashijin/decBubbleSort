@@ -6,11 +6,14 @@
 - :test: test_compareAndSwapSmallerToRight_should_not_swap_if_in_order
   :line: 7
   :message: ''
+- :test: test_compareAndSwapSmallerToRight_should_swap_if_in_order
+  :line: 13
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 1
-  :passed: 1
+  :total: 2
+  :passed: 2
   :failed: 0
   :ignored: 0
 :stdout: []
