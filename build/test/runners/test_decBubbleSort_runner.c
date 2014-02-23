@@ -38,6 +38,8 @@ extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_2_e
 extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_3_element(void);
 extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_4_element(void);
 extern void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range100Toneg100(void);
+extern void test_bubbleSort_should_sort_properly_5_element(void);
+extern void test_sortSmallestToRightMost_should_sort_properly(void);
 
 
 //=======Test Reset Option=====
@@ -61,6 +63,8 @@ int main(void)
   RUN_TEST(test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_3_element, 37);
   RUN_TEST(test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_4_element, 44);
   RUN_TEST(test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range100Toneg100, 52);
+  RUN_TEST(test_bubbleSort_should_sort_properly_5_element, 66);
+  RUN_TEST(test_sortSmallestToRightMost_should_sort_properly, 76);
 
   return (UnityEnd());
 }

@@ -63,3 +63,27 @@ void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range1
 	TEST_ASSERT_EQUAL(-100,array[8]);
 
 }
+void test_bubbleSort_should_sort_properly_5_element(){
+	int array [] ={33,11,22,8,3};
+	decbubbleSort(array, sizeof(array)/sizeof(int));
+	TEST_ASSERT_EQUAL(33,array[0]);
+	TEST_ASSERT_EQUAL(22,array[1]);
+	TEST_ASSERT_EQUAL(11,array[2]);
+	TEST_ASSERT_EQUAL(8,array[3]);
+	TEST_ASSERT_EQUAL(3,array[4]);
+}
+
+void test_sortSmallestToRightMost_should_sort_properly(){
+	int array [] ={-100,0,-50,25,75,-25,50,100,-75};
+	decbubbleSort(array, sizeof(array)/sizeof(int));
+	TEST_ASSERT_EQUAL(100,array[0]);
+	TEST_ASSERT_EQUAL(75,array[1]);
+	TEST_ASSERT_EQUAL(50,array[2]);
+	TEST_ASSERT_EQUAL(25,array[3]);
+	TEST_ASSERT_EQUAL(0,array[4]);
+	TEST_ASSERT_EQUAL(-25,array[5]);
+	TEST_ASSERT_EQUAL(-50,array[6]);
+	TEST_ASSERT_EQUAL(-75,array[7]);
+	TEST_ASSERT_EQUAL(-100,array[8]);
+
+}

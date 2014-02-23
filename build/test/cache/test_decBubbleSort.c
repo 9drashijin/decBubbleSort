@@ -125,3 +125,51 @@ void test_sortSmallestToRightMost_should_move_Smallest_to_the_end_for_the_range1
 
 
 }
+
+void test_bubbleSort_should_sort_properly_5_element(){
+
+ int array [] ={33,11,22,8,3};
+
+ decbubbleSort(array, sizeof(array)/sizeof(int));
+
+ UnityAssertEqualNumber((_U_SINT)((33)), (_U_SINT)((array[0])), (((void *)0)), (_U_UINT)69, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((22)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)70, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((11)), (_U_SINT)((array[2])), (((void *)0)), (_U_UINT)71, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((8)), (_U_SINT)((array[3])), (((void *)0)), (_U_UINT)72, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((array[4])), (((void *)0)), (_U_UINT)73, UNITY_DISPLAY_STYLE_INT);
+
+}
+
+
+
+void test_sortSmallestToRightMost_should_sort_properly(){
+
+ int array [] ={-100,0,-50,25,75,-25,50,100,-75};
+
+ decbubbleSort(array, sizeof(array)/sizeof(int));
+
+ UnityAssertEqualNumber((_U_SINT)((100)), (_U_SINT)((array[0])), (((void *)0)), (_U_UINT)79, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((75)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)80, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((50)), (_U_SINT)((array[2])), (((void *)0)), (_U_UINT)81, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((25)), (_U_SINT)((array[3])), (((void *)0)), (_U_UINT)82, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((0)), (_U_SINT)((array[4])), (((void *)0)), (_U_UINT)83, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-25)), (_U_SINT)((array[5])), (((void *)0)), (_U_UINT)84, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-50)), (_U_SINT)((array[6])), (((void *)0)), (_U_UINT)85, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-75)), (_U_SINT)((array[7])), (((void *)0)), (_U_UINT)86, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((-100)), (_U_SINT)((array[8])), (((void *)0)), (_U_UINT)87, UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

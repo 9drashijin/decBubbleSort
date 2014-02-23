@@ -19,3 +19,12 @@ void sortSmallestToRightMost(int *array, int size){
 	}
 	
 }
+
+
+void decbubbleSort(int *array, int size){
+	
+	for( ;size >=1 ; size--){
+	sortSmallestToRightMost(array,size);
+	}
+	
+}
