@@ -1,0 +1,16 @@
+---
+:source:
+  :path: test
+  :file: test_decBubbleSort.c
+:successes:
+- :test: test_compareAndSwapSmallerToRight_should_not_swap_if_in_order
+  :line: 7
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 1
+  :failed: 0
+  :ignored: 0
+:stdout: []
